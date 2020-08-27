@@ -1,0 +1,496 @@
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	text-decoration: none;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/* custom CSS */
+
+@font-face{
+	font-family: 'poppins-light';
+	src: url('../assets/fonts/Poppins-Light.ttf');
+}
+
+@font-face{
+	font-family: 'poppins-regular';
+	src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'poppins-semiBold';
+	src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face{
+	font-family: 'poppins-semiBoldItalic';
+	src: url('../assets/fonts/Poppins-SemiBoldItalic.ttf');
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: transparent;
+	font-family:poppins-regular, Arial, Sans-Serif;
+	/*scroll-behavior: none;*/
+	scroll-behavior: smooth;
+	/*overflow: auto;*/
+}
+
+canvas{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	z-index:5;
+}
+
+/*CHANGE DEFAULT FULLPAGE TABLE CLASS!*/
+
+/*.fp-tableCell {
+display: flex;
+align-items: flex-end;
+justify-content: center;
+flex-wrap: wrap;
+min-height: 100vw;
+height:auto;
+}*/
+
+/*<----------------------------------------------------------------->*/
+
+/*HEADER*/
+
+#navbar{
+	top:0;
+	z-index: 10;	
+	width: 100vw;
+	height:50px;
+	position: fixed;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas: 
+	"logo nav";	
+}
+
+
+#logo{
+	grid-area: logo;
+	font-family: poppins-regular, Arial, Sans-Serif;
+	font-size: 11px;
+	color: 	#353839;
+	font-weight:bold;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: flex-start;
+	align-items:center;
+	margin-left: 2em;
+}
+
+#nav{
+	grid-area: nav;
+	font-family: poppins-regular, Arial, Sans-Serif;
+	font-size: 10px;
+	color: 	#353839;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	margin-right: 2em;
+}
+
+#nav a{
+	margin: .6em;
+	color: 	#353839;
+}
+
+#nav a:hover{
+	color: #ff9999;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/*PAGE TITLE*/
+
+.title{
+	position: absolute;
+	font-family: poppins-semiBold, Arial, Sans-Serif;
+	font-size: 1.8em;
+	color: #0e1111;
+	top:2.5em;
+	left:1em;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/*BUTTON*/
+
+.button{
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	width: auto;
+	height: auto;
+	padding: 8px;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	-webkit-transform: translate(-50%, 0); 
+	color: white;
+	font-size: 0.9em;
+	background: rgb(255,118,118);
+	background: linear-gradient(90deg, rgba(255,118,118,1) 0%, rgba(201,56,66,1) 100%);
+	z-index: 10;
+}
+
+.button p{
+	color: white;
+	font-size: 0.9em;
+	margin-bottom: 3px;
+}
+
+img{
+	width: 14px;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/*HOME PAGE TEXT*/
+
+#homeText{
+	font-family: poppins-semiBold, Arial, Sans-Serif;
+	font-size:1.9em;
+	color: #000;
+	position: absolute;
+	top: 10%;
+	line-height: 1.5em;
+	padding: 1em;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/* STRIPES*/
+
+#stripeOne{
+	background-color: #ff9999;
+	display: block;
+	width: 100vw;
+	height: 30px;
+	position: absolute;
+	top:42%;
+	z-index:3;
+}
+
+#stripeTwo{
+	background-color: #cc9999;
+	display: block;
+	width: 100vw;
+	height: 60px;
+	position: absolute;
+	top:42%;
+	z-index: 2;
+}
+
+#stripeThree{
+	background-color: #aa9999;
+	display: block;
+	width: 100vw;
+	height: 90px;
+	position: absolute;
+	top:42%;
+	z-index: 1;
+}
+
+#red{
+	color:#ff9999;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/* SWIPER.JS ClASSES */
+
+.swiper-container {
+	width: 80%;
+	height: 500px;
+	padding: 1em;
+}
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slideContents{
+	color: white;
+	width: 60%;
+	height: 300px;
+	display: flex;
+	padding: 2em;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.slideContents h1{
+	font-family: poppins-light, Arial, Sans-Serif;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+
+.slideContents p{
+	margin-top: 1em;
+	font-size: .5em;
+	line-height: 22px;
+}
+
+.slideContents a{
+	font-family: poppins-light, Arial, Sans-Serif;
+	font-size: 0.6em;
+	letter-spacing: 2px;
+	border: 1px solid white;
+	padding: 0.7em;
+	align-self: center;
+	margin-top: 2em;
+	color: white;
+	transition: 0.2s;
+}
+
+.slideContents a:hover{
+	padding: 1.1em;
+	transition: 0.5s;
+	}
+
+.swiper-button-prev{
+	color: #ff9999;
+
+}
+
+.swiper-button-next{
+	color: #ff9999;
+
+}
+
+#Voyr {
+	background-image: url("../assets/slides/Voyr_ad.png");
+	background-position: calc(60%) calc(60%); 
+	background-blend-mode: multiply;
+	background-color: #666666;
+}
+
+#Transfer {
+	background-image: url("../assets/slides/Transfer.png");
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-color: #666666;
+}
+
+#livingEarth {
+	background-image: url("../assets/slides/Living_Earth.png");
+	background-position: calc(60%) calc(60%);
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-color: #666666;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/*Contact Form Classes*/
+
+#contact-form{
+	background: #fff;
+	width: 100%;
+	display: flex;
+	justify-content: height: 100%;center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.form-control{
+	height: auto;
+	width: 60%;
+	outline: none;
+	margin: 1em;
+	padding: 1em;
+	background: #fff;
+}
+
+   input {
+        padding: 5px;
+        margin: 5px 0;
+       /* outline: none;*/
+        border: 1px solid #000;
+        /*outline-style: 1px solid black;*/
+      }
+      input:focus,
+      input:active {
+        border: 2px solid #ff7777;
+      }
+
+      #inputButtonWrapper{
+	margin-top:2em;
+	background: rgb(255,118,118);
+	background: linear-gradient(90deg, rgba(255,118,118,1) 0%, rgba(201,56,66,1) 100%);
+	padding: 10px;
+	flex-direction: row;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#inputButton{
+	display: flex;
+	color: white;
+	border: none;
+	font-size: 0.9em;
+	background: transparent;
+}
+
+/*<----------------------------------------------------------------->*/
+
+/*MEDIUM MEDIA QUERY*/
+
+@media (min-width : 768px) and (max-width: 1224px){
+
+    .title{
+    	font-size: 2.2em;
+    	top:2em;
+    	left:1em;
+    }
+    
+    #nav{font-size: 12px;
+    }
+    
+    #nav a{
+    	margin: 1em;
+    }
+    
+    #logo{
+            font-size:14px;
+        }
+
+    #homeText{
+        font-size:2.2em;
+    }
+
+	#infoTab{
+		width: 300px;
+	}
+	
+	.slideContents h1{
+	font-size: 1.5em;
+}
+
+.slideContents p{
+	font-size: 1em;
+}
+
+.slideContents a{
+
+	font-size: 1em;
+	padding: 1em;
+}
+
+}
+
+/*LARGE MEDIA QUERY*/
+
+@media (min-width : 1224px){
+
+    .title{
+    	font-size: 2.2em;
+    	top:2em;
+    	left:1em;
+    }
+    
+    #nav{font-size: 12px;
+    }
+    
+    #nav a{
+	margin: 1em;
+    }
+
+    #logo{
+        font-size:14px;
+    }
+
+#homeText{
+    font-size:2.2em;
+}
+
+	#infoTab{
+		width: 300px;
+	}
+	
+		.slideContents h1{
+	font-size: 1.5em;
+}
+
+.slideContents p{
+	font-size: 1em;
+}
+
+.slideContents a{
+
+	font-size: 1em;
+	padding: 1em;
+}
+
+
+}

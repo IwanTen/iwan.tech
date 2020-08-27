@@ -1,0 +1,137 @@
+
+
+<html lang = "en">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico">
+
+	<title>Iwan Traeger-Payne</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.119.1/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.119.1/examples/js/loaders/GLTFLoader.js"></script>
+	<!-- <script src="js/three.min.js"></script> -->
+	<!-- <script src="js/GLTFLoader.js"></script> -->
+	<script src="js/script.js"> </script>
+
+
+</head>
+
+<body> 
+
+<header id="navbar">
+	<div id="logo">
+		<h1>Iwan Traeger-Payne</h1>
+	</div>
+
+	<div id="nav">
+		<a href="#Home">Home</a>
+		<a href="#Portfolio">Portfolio</a>
+		<a href="#Contact">Contact</a>
+	</div>
+</header>
+
+<!-- BEGIN FULLPAGE -->
+
+<div id="fullpage">
+
+	<!--SECTION 1 -->
+
+	<div class="section" id="section0">
+
+
+
+		<h1 id = "homeText">Web Developer.<br>Creative Technologist.</h1>
+
+		<div id="stripeOne"> </div>
+		<div id="stripeTwo"> </div>
+		<div id="stripeThree"></div>
+
+		<a data-menuanchor="Home" class="active button" href="#Portfolio" id = "button"><p>View my work</p>
+			<img src="assets/down_arrow.svg">
+		</a>
+
+		<canvas id="myCanvas"></canvas>
+
+	</div>
+
+	<!-- SECTION 2 (PORTFOLIO GRID) -->
+
+	<div class="section" id="section1">
+		<h1 class="title"> Portfolio. </h1>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="slideContents" id="Voyr">
+						<h1>Voyr</h1>
+						<p>
+							I was hired to co-design a mock mobile application for its use in a fellow student's senior thesis film. Together my partner and I used an iterative design process to curate a mobile UI experience that played a central role in our clients dystopian production. Her film was awarded the Purchase Senior Award for Outstanding Film.
+						</p>
+						<a href="https://www.purchase.edu/live/news/4794-sasha-perez-20-awarded-senior-award-for">Click to learn more</a>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slideContents" id="Transfer">
+						<h1>Transfer</h1>
+						<p>
+							In my explorational sandbox game “Transfer”, I invite the user to explore a surreal procedurally generated world through the eyes of protagonist Kyan. Named after Kyanite, a crystal known to enhance one’s telepathic and psychic abilities, Kyan’s powers to transfer his soul into the beings around him allows for a variety of interesting outcomes to emerge. (This is an ongoing project but is currently playable in its stage)
+						</p>
+						<a href="https://iwanten.itch.io/transfer">Click to learn more</a>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slideContents" id="livingEarth">
+						<h1>Living Earth Realty</h1>
+						<p>
+							I redesigned and relaunched my clients real estate website using Wordpress.  It was important to create a mobile friendly user experience that was simple and adhered to modern design techniques. By implimenting a CMS, I created a website that was both accesible for the client and user alike.
+						</p>
+						<a href="https://livingearthrealty.com">Click to learn more</a>
+					</div>
+				</div>
+
+				
+
+
+			</div>
+
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+
+		<a data-menuanchor="Portfolio" class="button" href="#Contact" id = "button"><p>Contact me</p>
+			<img src="assets/down_arrow.svg">
+		</a>
+
+	</div>
+
+	<!-- SECTION 3 -->
+
+	<div class="section" id="section2">
+		<!-- <div id="contact"> -->
+			<h1 class="title"> Contact. </h1>
+			<form id="contact-form" method="post" action="form-handler.php">
+				<input type="text" class="form-control" name="name" placeholder="Your Name" required>
+				<br>
+				<input type="email" class="form-control" name="email" placeholder="Your Email" required>
+				<br>
+				<textarea name="message" class="form-control" placeholder="Message" row = "4" required></textarea>
+				<br>
+				<span id="inputButtonWrapper"><input type="submit" value="Send Message" id="inputButton"> <img src="assets/mail_icon.svg"></span>
+			</form>
+			<!-- 	</div> -->
+
+		</div>
+
+	</div>
+
+</body>
+</html>
